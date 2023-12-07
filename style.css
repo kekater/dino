@@ -9,7 +9,9 @@
     position: relative; 
     width: 600px;
     height: 200px;
+
     border-bottom: 5px dotted green; 
+    
     margin: auto;
 }
 
@@ -22,7 +24,7 @@
     z-index: -1;
 
     /* Позиционирование внутри родительского контейнера .game */
-    top: calc(100%); 
+    top: calc(101%); 
     left: calc(0%); 
     margin: auto;
 }
@@ -41,6 +43,8 @@
     cursor: pointer;
     /* border-radius: 5px; */
     text-align: center;
+    z-index: 2;
+
 }
 
 #startButton:hover {
@@ -100,25 +104,37 @@
     left: 550px;
     z-index: 1;
 
-    /* animation: cloudSunMov 10s infinite linear; */
+    animation: cloudSunMov 40s infinite linear;
 }
 
-/* @keyframes cloudSunMov {
+@keyframes cloudSunMov {
     0% {left: 550px}
     100% {left: -20px }
-} */
+}
 
 #cloud{
-    width: 40px;
-    height: 25px;
+    width: 60px;
+    height: 45px;
     background-image: url(img/cloud.png);
-    background-size: 40px 25px;
+    background-size: 60px 45px;
     position: relative;
     top: -20px;
     left: 500px;
-    z-index: -1;
-
+    z-index: 1;
     animation: cloudMov 5s infinite linear;
+
+}
+
+#cloudTwo{
+    width: 50px;
+    height: 35px;
+    background-image: url(img/cloud.png);
+    background-size: 50px 35px;
+    position: relative;
+    top: -25px;
+    /* right: 150px; */
+    z-index: 1;
+    animation: cloudMov 10s infinite linear;
 
 }
 
