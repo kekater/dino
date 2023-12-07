@@ -1,4 +1,4 @@
-# dino
+# Dino
 This simple Dino Jump Game is a browser-based game built using HTML, CSS, and JavaScript. 
 The game features a dinosaur (dino) that can jump to avoid oncoming cacti. Your goal is to keep the dinosaur alive by timing its jumps to avoid collisions with the cacti.
 
