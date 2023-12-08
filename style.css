@@ -1,18 +1,17 @@
 .game {
-    /* width: 600px;
-    height: 200px;
-    border-bottom-style: dotted;
-    border-bottom-color: green;
-    border-width: 5px;
-    margin: auto;
-    z-index: 0; */
     position: relative; 
-    width: 600px;
+    width: 60vw;
     height: 200px;
 
     border-bottom: 5px dotted green; 
     
     margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .game {
+        width: 100%;
+    }
 }
 
 .game::before {
@@ -44,7 +43,6 @@
     /* border-radius: 5px; */
     text-align: center;
     z-index: 2;
-
 }
 
 #startButton:hover {
@@ -58,7 +56,8 @@
     background-image: url(img/dino2.png);
     background-size: 50px 50px;
     position: relative;
-    top: 150px;
+    top: 76%;
+    /* 150px; */
     
 }
 
@@ -70,15 +69,16 @@
     position: relative;
     top: 115px;
     left: 580px;
-    animation: cactusMov 1s infinite linear;
+    animation: cactusMov 2s infinite linear;
 }
 @keyframes cactusMov {
-    0% {left: 580px}
-    100% {left: -20px }
+    0% {left: 95%}
+    100% {left: -5% }
 }
 
+
 .jump {
-    animation: jump 0.3s linear;
+    animation: jump 0.4s linear;
 
 }
 
@@ -121,7 +121,7 @@
     top: -20px;
     left: 500px;
     z-index: 1;
-    animation: cloudMov 5s infinite linear;
+    animation: cloudMov 10s infinite linear;
 
 }
 
@@ -134,7 +134,7 @@
     top: -25px;
     /* right: 150px; */
     z-index: 1;
-    animation: cloudMov 10s infinite linear;
+    animation: cloudMov 5s infinite linear;
 
 }
 
@@ -143,3 +143,19 @@
     100% {left: -20px }
 }
 
+#finishButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #b8481f;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    text-align: center;
+    z-index: 2;
+}
